@@ -31,10 +31,10 @@
             this.joesCashLabel = new System.Windows.Forms.Label();
             this.bobsCashLabel = new System.Windows.Forms.Label();
             this.bankCashLabel = new System.Windows.Forms.Label();
-            this.btnGiveCash = new System.Windows.Forms.Button();
-            this.btnRecieveCash = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnGiveCash = new System.Windows.Forms.Button();
+            this.BtnRecieveCash = new System.Windows.Forms.Button();
+            this.JoeGivesToBob = new System.Windows.Forms.Button();
+            this.BobGivesToJoe = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // joesCashLabel
@@ -64,53 +64,55 @@
             this.bankCashLabel.TabIndex = 2;
             this.bankCashLabel.Text = "label3";
             // 
-            // btnGiveCash
+            // BtnGiveCash
             // 
-            this.btnGiveCash.Location = new System.Drawing.Point(42, 122);
-            this.btnGiveCash.Name = "btnGiveCash";
-            this.btnGiveCash.Size = new System.Drawing.Size(118, 23);
-            this.btnGiveCash.TabIndex = 3;
-            this.btnGiveCash.Text = "Daj 10 zł Joemu";
-            this.btnGiveCash.UseVisualStyleBackColor = true;
-            this.btnGiveCash.Click += new System.EventHandler(this.btnGiveCash_Click);
+            this.BtnGiveCash.Location = new System.Drawing.Point(41, 104);
+            this.BtnGiveCash.Name = "BtnGiveCash";
+            this.BtnGiveCash.Size = new System.Drawing.Size(118, 47);
+            this.BtnGiveCash.TabIndex = 3;
+            this.BtnGiveCash.Text = "Daj 10 zł Joemu";
+            this.BtnGiveCash.UseVisualStyleBackColor = true;
+            this.BtnGiveCash.Click += new System.EventHandler(this.BtnGiveCash_Click);
             // 
-            // btnRecieveCash
+            // BtnRecieveCash
             // 
-            this.btnRecieveCash.Location = new System.Drawing.Point(287, 122);
-            this.btnRecieveCash.Name = "btnRecieveCash";
-            this.btnRecieveCash.Size = new System.Drawing.Size(118, 23);
-            this.btnRecieveCash.TabIndex = 4;
-            this.btnRecieveCash.Text = "Weź 5 zł od Boba";
-            this.btnRecieveCash.UseVisualStyleBackColor = true;
-            this.btnRecieveCash.Click += new System.EventHandler(this.btnRecieveCash_Click);
+            this.BtnRecieveCash.Location = new System.Drawing.Point(269, 104);
+            this.BtnRecieveCash.Name = "BtnRecieveCash";
+            this.BtnRecieveCash.Size = new System.Drawing.Size(118, 47);
+            this.BtnRecieveCash.TabIndex = 4;
+            this.BtnRecieveCash.Text = "Weź 5 zł od Boba";
+            this.BtnRecieveCash.UseVisualStyleBackColor = true;
+            this.BtnRecieveCash.Click += new System.EventHandler(this.BtnRecieveCash_Click);
             // 
-            // button1
+            // JoeGivesToBob
             // 
-            this.button1.Location = new System.Drawing.Point(42, 170);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.JoeGivesToBob.Location = new System.Drawing.Point(41, 186);
+            this.JoeGivesToBob.Name = "JoeGivesToBob";
+            this.JoeGivesToBob.Size = new System.Drawing.Size(118, 47);
+            this.JoeGivesToBob.TabIndex = 5;
+            this.JoeGivesToBob.Text = "Joe daje 10 zł Bobowi ";
+            this.JoeGivesToBob.UseVisualStyleBackColor = true;
+            this.JoeGivesToBob.Click += new System.EventHandler(this.JoeGivesToBob_Click);
             // 
-            // button2
+            // BobGivesToJoe
             // 
-            this.button2.Location = new System.Drawing.Point(287, 170);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BobGivesToJoe.Location = new System.Drawing.Point(269, 186);
+            this.BobGivesToJoe.Name = "BobGivesToJoe";
+            this.BobGivesToJoe.Size = new System.Drawing.Size(118, 47);
+            this.BobGivesToJoe.TabIndex = 6;
+            this.BobGivesToJoe.Text = "Bob daje 5 zł Joemu";
+            this.BobGivesToJoe.UseVisualStyleBackColor = true;
+            this.BobGivesToJoe.Click += new System.EventHandler(this.BobGivesToJoe_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(438, 229);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnRecieveCash);
-            this.Controls.Add(this.btnGiveCash);
+            this.ClientSize = new System.Drawing.Size(424, 270);
+            this.Controls.Add(this.BobGivesToJoe);
+            this.Controls.Add(this.JoeGivesToBob);
+            this.Controls.Add(this.BtnRecieveCash);
+            this.Controls.Add(this.BtnGiveCash);
             this.Controls.Add(this.bankCashLabel);
             this.Controls.Add(this.bobsCashLabel);
             this.Controls.Add(this.joesCashLabel);
@@ -126,10 +128,10 @@
         private System.Windows.Forms.Label joesCashLabel;
         private System.Windows.Forms.Label bobsCashLabel;
         private System.Windows.Forms.Label bankCashLabel;
-        private System.Windows.Forms.Button btnGiveCash;
-        private System.Windows.Forms.Button btnRecieveCash;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnGiveCash;
+        private System.Windows.Forms.Button BtnRecieveCash;
+        private System.Windows.Forms.Button JoeGivesToBob;
+        private System.Windows.Forms.Button BobGivesToJoe;
     }
 }
 

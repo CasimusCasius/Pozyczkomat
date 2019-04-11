@@ -24,7 +24,7 @@ namespace Pozyczkomat
             UpdateForm();
         }
 
-        private void btnGiveCash_Click(object sender, EventArgs e)
+        private void BtnGiveCash_Click(object sender, EventArgs e)
         {
             if (bank >= 10)
             {
@@ -37,7 +37,7 @@ namespace Pozyczkomat
             }
         }
 
-        private void btnRecieveCash_Click(object sender, EventArgs e)
+        private void BtnRecieveCash_Click(object sender, EventArgs e)
         {
             bank += Bob.GiveCash(5);
             UpdateForm();
@@ -48,6 +48,16 @@ namespace Pozyczkomat
             joesCashLabel.Text = Joe.Name + " ma " + Joe.Cash + " zł";
             bobsCashLabel.Text = Bob.Name + " ma " + Bob.Cash + " zl";
             bankCashLabel.Text = "Bank ma " + bank + " zł";
+        }
+
+        private void JoeGivesToBob_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BobGivesToJoe_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

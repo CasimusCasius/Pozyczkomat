@@ -52,12 +52,15 @@ namespace Pozyczkomat
 
         private void JoeGivesToBob_Click(object sender, EventArgs e)
         {
-
+            Joe.GiveCash(Bob.RecieveCash(10));
+            UpdateForm();
         }
 
         private void BobGivesToJoe_Click(object sender, EventArgs e)
         {
-
+            
+            Joe.RecieveCash(Bob.GiveCash(5));
+            UpdateForm();
         }
     }
 }

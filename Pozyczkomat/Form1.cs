@@ -39,7 +39,7 @@ namespace Pozyczkomat
 
         private void btnRecieveCash_Click(object sender, EventArgs e)
         {
-            bank -= Bob.GiveCash(5);
+            bank += Bob.GiveCash(5);
             UpdateForm();
         }
 
